@@ -2,30 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Example : Nested</title>
 </head>
 <body>
-    <table border="2" cellspacing="0">
+    <p align="center">Example : Nested</p>
+    <table border="1" cellspacing="0" cellpadding="5" align="center">
         <tr>
-            <td rowspan="3" colspan="2">CI</td>
-            <td rowspan="3">All Genders</td>
-            <td colspan="2">By Gender</td>
+            <td rowspan="2" colspan="2" align="center"><b>CI</b></td>
+            <td rowspan="2" align="center"><b>All Genders</b></td>
+            <td colspan="2" align="center"><b>By Gender</b></td>
         </tr>
         <tr>
-            <td>Males</td>
-            <td>Females</td>
+            <td colspan="2">
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td align="center"><b>Males</b></td>
+                        <td align="center"><b>Females</b></td>
+                    </tr>
+                    <tr>
+                        <td align="center">9215604</td>
+                        <td align="center">4512358</td>
+                    </tr>
+                </table>
+            </td>
         </tr>
         <tr>
-            <td>9215604</td>
-            <td>4512358</td>
-        </tr>
-        <tr>
-            <td>Rural</td>
+            <td><b>Rural</b></td>
             <td>6521458</td>
             <td>4215389</td>
-            <td>4152348</td>
-            <td>4152348</td>
+            <td colspan="2">4152348</td>
         </tr>
     </table>
 </body>
