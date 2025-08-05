@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chessboard with Icons</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        background: red;
+    }
+    .chessboard {
+        width: 400px;
+        height: 400px;
+        border: 4px solid black;
+        font-size: 0;
+    }
+    .squareblack, .squarewhite {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+    }
+    .squareblack {
+        background-color: #333;
+    }
+    .squarewhite {
+        background-color: #fff;
+    }
+    .black-piece{
+        text-shadow: 0 0 2px white;
+    }
+    .white-piece{
+        color: #fff;
+        text-shadow: 0 0 2px black;
+    }
+</style>
+</head>
+<body>
+    <div class="chessboard">
+        <!-- Row 1 (Black pieces) -->
+        <div class="squarewhite"><i class="fas fa-chess-rook black-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-knight black-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-bishop black-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-queen black-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-king black-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-bishop black-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-knight black-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-rook black-piece"></i></div>
+
+        <!-- Row 2 (Black pawns) -->
+        <div class="squareblack"><i class="fas fa-chess-pawn black-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-pawn black-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-pawn black-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-pawn black-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-pawn black-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-pawn black-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-pawn black-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-pawn black-piece"></i></div>
+
+        <!-- Empty rows -->
+        <!-- Row 3 -->
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+
+        <!-- Row 4 -->
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+
+        <!-- Row 5 -->
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+
+        <!-- Row 6 -->
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+        <div class="squareblack"></div>
+        <div class="squarewhite"></div>
+
+        <!-- Row 7 (White pawns) -->
+        <div class="squarewhite"><i class="fas fa-chess-pawn white-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-pawn white-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-pawn white-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-pawn white-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-pawn white-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-pawn white-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-pawn white-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-pawn white-piece"></i></div>
+
+        <!-- Row 8 (White pieces) -->
+        <div class="squareblack"><i class="fas fa-chess-rook white-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-knight white-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-bishop white-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-queen white-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-king white-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-bishop white-piece"></i></div>
+        <div class="squareblack"><i class="fas fa-chess-knight white-piece"></i></div>
+        <div class="squarewhite"><i class="fas fa-chess-rook white-piece"></i></div>
+    </div>
+</body>
+</html>
