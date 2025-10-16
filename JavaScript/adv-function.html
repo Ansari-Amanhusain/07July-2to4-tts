@@ -35,6 +35,34 @@
             return i+j//10+20=30 , i=30 j=30, 30+30=60
         })
         document.write('<br>Total is '+total)
+
+        let arr2=[2,13,12,43,65,5,61]
+        let max=arr2.reduce((i,j)=>{
+            if(i<j){
+                i=j
+            }
+            return i
+        })
+        document.write('<br>Maximum is : '+max)
+        let arr3=[2,3,43,12,32,45,65]
+        let min=arr3.reduce((i,j)=>{
+            if(i>j){
+                i=j
+            }
+            return i
+        })
+        document.write('<br>Minimum is : '+min)
+        
+        let arr4=["abc","xyz","abc","try","abc","xyz"]
+        let count=arr4.reduce((i,j)=>{
+            if(!i[j]){
+                i[j]=1
+            }else{
+                i[j]++
+            }
+            return i
+        },{})
+        console.log(count)
     </script>
 </body>
 </html>
